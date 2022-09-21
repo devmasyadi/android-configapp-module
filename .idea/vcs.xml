@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/android-ads-manager/admob-fan-applovin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/android-ads-manager/admob-fan-applovin-wrapper" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/android-ads-manager/module/admob" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/android-ads-manager/module/applovin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/android-ads-manager/module/core-ads-manager" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/android-ads-manager/module/fan" vcs="Git" />
+  </component>
+</project>
