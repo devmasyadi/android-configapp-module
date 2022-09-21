@@ -1,5 +1,5 @@
 package com.androidmodule.configapp.utils
 
-object Utils {
+object ConfigAppUtils {
     var baseUrl: String? = null
 }

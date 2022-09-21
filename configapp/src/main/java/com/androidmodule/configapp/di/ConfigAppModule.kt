@@ -3,7 +3,7 @@ package com.androidmodule.configapp.di
 import com.androidmodule.configapp.BuildConfig
 import com.androidmodule.configapp.data.Repository
 import com.androidmodule.configapp.data.remote.ApiService
-import com.androidmodule.configapp.utils.Utils
+import com.androidmodule.configapp.utils.ConfigAppUtils
 import com.androidmodule.configapp.viewmodel.ConfigAppViewModel
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -27,7 +27,7 @@ val configAppModule = module {
 
     single {
         val retrofit = Retrofit.Builder()
-            .baseUrl(Utils.baseUrl ?: BuildConfig.BASE_URL)
+            .baseUrl(ConfigAppUtils.baseUrl ?: BuildConfig.BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .client(get())
             .build()
