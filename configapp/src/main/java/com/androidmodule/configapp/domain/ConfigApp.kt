@@ -1,7 +1,10 @@
 package com.androidmodule.configapp.domain
 
+import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import kotlinx.parcelize.Parcelize
 
+@Parcelize
 data class ConfigApp(
 
     @field:SerializedName("isAppActive")
@@ -153,4 +156,4 @@ data class ConfigApp(
 
     @field:SerializedName("quaternaryAds")
     val quaternaryAds: String? = null
-)
+) : Parcelable
