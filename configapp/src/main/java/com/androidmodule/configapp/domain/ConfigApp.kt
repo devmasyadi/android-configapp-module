@@ -70,6 +70,9 @@ data class ConfigApp(
     @field:SerializedName("isShowAds")
     val isShowAds: Boolean? = null,
 
+    @field:SerializedName("childDirected")
+    val childDirected: Boolean? = null,
+
     @field:SerializedName("tertiaryBannerId")
     val tertiaryBannerId: String? = null,
 
