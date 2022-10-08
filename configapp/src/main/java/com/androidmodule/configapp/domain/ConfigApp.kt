@@ -121,6 +121,9 @@ data class ConfigApp(
     @field:SerializedName("isOnRedirect")
     val isOnRedirect: Boolean? = null,
 
+    @field:SerializedName("isOnRedirectAppCancelable")
+    val isOnRedirectAppCancelable: Boolean? = null,
+
     @field:SerializedName("urlPrivacyPolicy")
     val urlPrivacyPolicy: String? = null,
 
