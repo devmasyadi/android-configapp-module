@@ -1,6 +1,5 @@
 package com.androidmodule.configapp.di
 
-import com.androidmodule.configapp.BuildConfig
 import com.androidmodule.configapp.data.Repository
 import com.androidmodule.configapp.data.remote.ApiService
 import com.androidmodule.configapp.utils.ConfigAppUtils
@@ -26,12 +25,14 @@ val configAppModule = module {
     }
 
     factory {
-        val retrofit = Retrofit.Builder()
-            .baseUrl(ConfigAppUtils.baseUrl ?: BuildConfig.BASE_URL)
-            .addConverterFactory(GsonConverterFactory.create())
-            .client(get())
-            .build()
-        retrofit.create(ApiService::class.java)
+        val retrofit = ConfigAppUtils.baseUrl?.let { url ->
+            Retrofit.Builder()
+                .baseUrl(url)
+                .addConverterFactory(GsonConverterFactory.create())
+                .client(get())
+                .build()
+        }
+        retrofit?.create(ApiService::class.java)
     }
 
     single { Repository(get()) }
