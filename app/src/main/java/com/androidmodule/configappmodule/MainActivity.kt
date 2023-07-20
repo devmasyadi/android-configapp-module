@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        configAppViewModel.getData(this.packageName).observe(this) { resource ->
+        configAppViewModel.getData(this.packageName, "sdfdf").observe(this) { resource ->
             when (resource) {
                 is Resource.Error -> {
                     resource.message?.let { Log.e(TAG, it) }

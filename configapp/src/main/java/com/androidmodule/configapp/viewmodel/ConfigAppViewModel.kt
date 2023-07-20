@@ -5,5 +5,5 @@ import androidx.lifecycle.asLiveData
 import com.androidmodule.configapp.data.Repository
 
 class ConfigAppViewModel(private val repository: Repository) : ViewModel() {
-    fun getData(packageName: String) = repository.getData(packageName).asLiveData()
+    fun getData(appId: String, hashId: String) = repository.getData(appId, hashId).asLiveData()
 }

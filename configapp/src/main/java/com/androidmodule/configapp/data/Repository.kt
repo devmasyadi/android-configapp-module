@@ -10,11 +10,11 @@ import kotlinx.coroutines.flow.flowOn
 class Repository(
     private val apiService: ApiService
 ) : IRepository {
-    override fun getData(packageName: String): Flow<Resource<ConfigApp>> {
+    override fun getData(appId: String, hashId: String): Flow<Resource<ConfigApp>> {
         return flow {
             try {
                 emit(Resource.Loading())
-                val result = apiService.getData(packageName)
+                val result = apiService.getData(appId, hashId)
                 emit(Resource.Success(result))
             } catch (e: Exception) {
                 emit(Resource.Error(e.toString()))

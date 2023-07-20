@@ -4,5 +4,5 @@ import com.androidmodule.configapp.domain.ConfigApp
 import kotlinx.coroutines.flow.Flow
 
 interface IRepository {
-    fun getData(packageName: String): Flow<Resource<ConfigApp>>
+    fun getData(appId: String, hashId: String): Flow<Resource<ConfigApp>>
 }
