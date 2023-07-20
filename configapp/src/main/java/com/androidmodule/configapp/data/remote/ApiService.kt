@@ -5,8 +5,9 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface ApiService {
-    @GET("configApp/apps")
+    @GET("apps")
     suspend fun getData(
-        @Query("packageName") packageName: String?
+        @Query("appId") appId: String?,
+        @Query("hashId") hashId: String?
     ): ConfigApp
 }

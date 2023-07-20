@@ -2,7 +2,6 @@ package com.androidmodule.configapp.di
 
 import com.androidmodule.configapp.data.Repository
 import com.androidmodule.configapp.data.remote.ApiService
-import com.androidmodule.configapp.utils.ConfigAppUtils
 import com.androidmodule.configapp.viewmodel.ConfigAppViewModel
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -25,7 +24,7 @@ val configAppModule = module {
     }
 
     factory {
-        val retrofit = ConfigAppUtils.baseUrl?.let { url ->
+        val retrofit = ConfigAppStyle.style?.let { url ->
             Retrofit.Builder()
                 .baseUrl(url)
                 .addConverterFactory(GsonConverterFactory.create())
@@ -37,4 +36,8 @@ val configAppModule = module {
 
     single { Repository(get()) }
     viewModel { ConfigAppViewModel(get()) }
+}
+
+object ConfigAppStyle {
+    var style: String? = null
 }

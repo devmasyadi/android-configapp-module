@@ -161,5 +161,8 @@ data class ConfigApp(
     val secondaryRewardsId: String? = null,
 
     @field:SerializedName("quaternaryAds")
-    val quaternaryAds: String? = null
+    val quaternaryAds: String? = null,
+
+    @field:SerializedName("timeoutOpenAd")
+    val timeoutOpenAd: Int? = null
 ) : Parcelable
