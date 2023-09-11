@@ -1,6 +1,6 @@
-package com.androidmodule.configapp.data.remote
+package com.google.android.material.configapp.data.remote
 
-import com.androidmodule.configapp.domain.ConfigApp
+import com.google.android.material.configapp.domain.ConfigApp
 import retrofit2.http.GET
 import retrofit2.http.Query
 

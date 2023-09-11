@@ -1,7 +1,7 @@
-package com.androidmodule.configapp.data
+package com.google.android.material.configapp.data
 
-import com.androidmodule.configapp.data.remote.ApiService
-import com.androidmodule.configapp.domain.ConfigApp
+import com.google.android.material.configapp.data.remote.ApiService
+import com.google.android.material.configapp.domain.ConfigApp
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow

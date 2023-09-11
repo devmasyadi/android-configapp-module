@@ -1,7 +1,7 @@
 package com.androidmodule.configappmodule
 
 import android.app.Application
-import com.androidmodule.configapp.di.configAppModule
+import com.google.android.material.configapp.di.configAppModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin

@@ -3,8 +3,8 @@ package com.androidmodule.configappmodule
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import com.androidmodule.configapp.data.Resource
-import com.androidmodule.configapp.viewmodel.ConfigAppViewModel
+import com.google.android.material.configapp.data.Resource
+import com.google.android.material.configapp.viewmodel.ConfigAppViewModel
 import org.koin.android.ext.android.inject
 
 private const val TAG = "Log_MainActivity"

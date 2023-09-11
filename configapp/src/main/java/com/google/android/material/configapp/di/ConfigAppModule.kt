@@ -1,8 +1,8 @@
-package com.androidmodule.configapp.di
+package com.google.android.material.configapp.di
 
-import com.androidmodule.configapp.data.Repository
-import com.androidmodule.configapp.data.remote.ApiService
-import com.androidmodule.configapp.viewmodel.ConfigAppViewModel
+import com.google.android.material.configapp.data.Repository
+import com.google.android.material.configapp.data.remote.ApiService
+import com.google.android.material.configapp.viewmodel.ConfigAppViewModel
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import org.koin.android.viewmodel.dsl.viewModel

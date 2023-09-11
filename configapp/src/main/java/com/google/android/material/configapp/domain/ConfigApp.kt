@@ -1,4 +1,4 @@
-package com.androidmodule.configapp.domain
+package com.google.android.material.configapp.domain
 
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName

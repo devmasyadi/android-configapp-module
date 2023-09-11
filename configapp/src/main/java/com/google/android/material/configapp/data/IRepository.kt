@@ -1,6 +1,6 @@
-package com.androidmodule.configapp.data
+package com.google.android.material.configapp.data
 
-import com.androidmodule.configapp.domain.ConfigApp
+import com.google.android.material.configapp.domain.ConfigApp
 import kotlinx.coroutines.flow.Flow
 
 interface IRepository {
